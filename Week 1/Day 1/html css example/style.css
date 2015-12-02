@@ -1,0 +1,12 @@
+body{
+    background-color: blue;
+    /*background-color: red;*/
+}
+
+#main{
+    width: 400px;
+}
+
+.puppy{
+    width: 200px;
+}

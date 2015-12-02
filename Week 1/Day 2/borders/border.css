@@ -1,0 +1,16 @@
+.box1{
+    /*border: 20px dashed red;*/
+    /*padding: 120px 10px 30px 15px;*/
+    display: inline-block;
+}
+.box2, img{
+    /*border: 20px solid red;
+    margin: 120px 10px 30px 15px;
+    font-size: 20px; */
+    display: inline-block;
+}
+img{
+    width: 25%;
+    /*margin: 40px 30px;*/
+    border: 20px solid black;
+}

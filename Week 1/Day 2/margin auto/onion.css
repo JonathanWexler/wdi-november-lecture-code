@@ -1,0 +1,43 @@
+.main{
+    color: darkgreen;
+}
+.titles{
+    font-family: Georgia;
+}
+.centered {
+    text-align: center;
+}
+.space{
+    line-height: 19px;
+}
+.article-img{
+    width: 25%;
+}
+.article-img:hover{
+    width: 55%;
+}
+p{
+    font-size: 15px;
+}
+p:hover{
+    font-size: 20px;
+}
+.up{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline; 
+}
+.buffer {
+    width:700px;
+    margin:0 auto;
+/*    margin-right: 300px; 
+    margin-left: 300px;*/
+}
+
+.color{
+    color:blue;
+}

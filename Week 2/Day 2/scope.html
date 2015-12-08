@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+    #scope{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    </style>
+
+    <script>   
+    var securityProblem = false;
+    var message = "welcome";
+
+    function auth(){
+        // // console.log("message is " + message);
+        if(securityProblem){
+            // console.log("2message is " + message);
+            var message = "Error";
+            // console.log("3message is " + message);
+        } else {
+            var message = window.message;
+        }
+        debugger;
+        console.log(message);
+    }   
+    auth();
+
+
+// if(false) {
+//     var apple = "orange";
+// }
+
+// console.log(apple);
+
+// var correctPassword = "123";
+// var correctUsername = "jon";
+
+// $("#password, #username").change(function(){
+//   if(($("#password").val() == correctPassword) && ($("#username").val() == correctUsername)){
+//     $( "#par" ).append( "<p>Great! You are signed in</p>" );
+//             // alert('password cannot be blank');
+//         } else if ($("#password").val() == correctPassword){
+//             $( "#par" ).append( "please enter correct username!" );
+//         }else if ($("#username").val() == correctUsername){
+//             $( "#par" ).append( "please enter correct password!" );
+//         } else {
+//             $( "#par" ).append( "please log in!" );
+//         }
+//     });
+</script>
+</head>
+<body>
+    <div id="scope" >
+        <img src="http://media.scopemouthwash.com//images/crest-products/large/scope-mouthwash-original-mint.png" alt="">
+
+        <form action="#" method="POST">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+
+
+
+</body>
+</html>

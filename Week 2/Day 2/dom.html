@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        // console.log($($('p')[0]));
+
+        var correctPassword = "123";
+        var correctUsername = "jon";
+
+        $("h1").click(function(){
+            $(this).hide();
+        });
+
+        $("form").submit(function(e){
+            // alert("TEST");
+            e.preventDefault();
+        });
+
+        $("#password, #username").change(function(){
+          if(($("#password").val() == correctPassword) && ($("#username").val() == correctUsername)){
+            $( "#par" ).append( "<p>Great! You are signed in</p>" );
+            // alert('password cannot be blank');
+            } else if ($("#password").val() == correctPassword){
+                $( "#par" ).append( "please enter correct username!" );
+            }else if ($("#username").val() == correctUsername){
+                $( "#par" ).append( "please enter correct password!" );
+            } else {
+                $( "#par" ).append( "please log in!" );
+            }
+        });
+            // $("form").fadeOut(5000);
+            // setTimeout(function(){
+            //     $( "#par" ).append( "<p>Sorry</p>" );
+            // }, 1000);
+            // setTimeout(function(){
+            //     $( "#par" ).append( "<h4>You aren't welcomed here...</h4>" );
+            // }, 2000);
+            // setTimeout(function(){
+            //     $( "#par" ).append( "<h3>Go live in the woods</h3>" );
+            // }, 3000);
+            // setTimeout(function(){
+            //     $( "#par" ).append( "<h2>Technology doesn't want you around!</h2>" );
+            // }, 4000);
+        // }
+
+      //   $("form").submit(function(){
+      //     if($("#password").val() == ""){
+      //        alert('password cannot be blank');
+      //        return false;
+      //    } else if($("#username").val() == ""){
+      //        alert('username cannot be blank');
+      //        return false;
+      //    } else {
+      //     alert('all clear');
+      // }
+            // });
+
+
+});
+
+    // ​
+
+    </script>
+</head>
+<body>
+
+    <form action="#" method="POST">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+      <input type="submit" value="Submit">
+  </form>
+
+  <p id="par"></p>
+  <h1>Hello</h1>
+  <h1>There</h1>
+  <h1>everyone</h1>
+<!-- 
+  <button class="btn1">Slide up</button>
+  <button class="btn2">Slide down</button>
+-->
+</body>
+</html>
+

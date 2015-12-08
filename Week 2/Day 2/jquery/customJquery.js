@@ -1,3 +1,4 @@
+// This is just the page of Jquery from the web, nothing special here
 /*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/

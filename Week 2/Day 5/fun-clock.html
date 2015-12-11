@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fun Clock</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+    $(document).ready(function(){
+
+        setInterval(function(){
+
+            var d = new Date();
+            var spercent = (d.getSeconds()/60)*100;
+            var mpercent = (d.getMinutes()/60)*100;
+            console.log(spercent+"%");
+
+            if(d.getSeconds()%10 == 0) {
+                $("body").css('background-color', 'black');
+            } else if (d.getSeconds()%2 == 0) {
+                $("body").css('background-color', 'orange');
+            } else {
+                $("body").css('background-color', 'green');
+
+            };
+
+            $(".minute-text").text(d.getMinutes());
+            var destination = $('.minute').offset();
+            $('.minute-text').css({top: destination.top, left: destination.left});            
+            $(".second-text").text(d.getSeconds());
+            var destination = $('.second').offset();
+            $('.second-text').css({top: destination.top, left: destination.left});
+
+
+            $(".second").css("height", spercent+"%");
+            $(".minute").css("height", mpercent+"%");
+        }, 1000);
+    });
+    </script>
+    <style>
+
+    .num{
+        position: absolute;
+    }
+    .center{
+        width: 500px;
+        margin: 0px auto;
+        height: 600px;
+    }
+    .minute{
+        width: 100px;
+        height: 100%;
+        background-color: blue;
+        display: inline-block;
+
+    }
+    .white{
+        width: 100px;
+        height: 100%;
+        background-color: white;
+        display: inline-block;
+    }
+    .second{
+        width: 100px;
+        height: 100%;
+        background-color: red;
+        display: inline-block;
+        margin-left: 50px;
+    }
+    </style>
+
+    <div class="center">
+        <h1 class="minute-text num"></h1>
+        <span class="minute"></span>       
+        <span class="white"></span>  
+        <h1 class="second-text num"></h1>
+        <span class="second"></span>
+    </div>
+    
+</body>
+</html>

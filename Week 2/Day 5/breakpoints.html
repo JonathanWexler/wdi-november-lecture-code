@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>breapoints</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+    $(document).ready(function(){
+        var w = $(document).width();
+        if (w >= 1000) {
+            $("body").css("background-color", "blue");
+        } else if ( w>= 600 && w<1000) {
+            $("body").css("background-color", "red");
+
+        } else {
+            $("body").css("background-color", "green");
+        }
+        // console.log();
+    });
+
+    </script>
+
+    <h1>Hello</h1>
+</body>
+</html>

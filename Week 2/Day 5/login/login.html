@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+    .form{
+        width: 500px;
+        margin: 0px auto;
+    }
+
+</style>
+
+<script>
+    $(document).ready(function(){
+        $("form").submit(function(e){
+            console.log(e);
+            if($("#username").val() != "jon"){
+                e.preventDefault();
+                $("form").slideUp();
+                $("#username").val("");
+                $("#username").attr("placeholder", "try again");
+                $("form").slideDown();
+                $("body").css("background-color", "red");
+            } 
+        });
+    });
+</script>
+    <div class="form">
+        <h1>Login</h1>
+
+        <form action="landing.html">
+            <input type="text" placeholder="username" id="username">
+            <input type="text" placeholder="password" id="password">
+            <input type="submit" placeholder="Send">
+        </form>
+    </div>
+</body>
+</html>

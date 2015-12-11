@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Calculator</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+
+  $(document).ready(function(){
+
+
+  // create function squareNumber
+  function squareNumber (num) {
+      return num*num;  
+  }
+
+  $("#square-button").click(function(){
+    // alert("test");
+      var input = parseInt($("#square-input").val());
+      // check that input variable is a number and is safe to work with
+      $("#solution").text("The result of the square is: "+ squareNumber(input));
+  });
+
+  $("#square-input").keyup(function(event){
+      if (event.keyCode === 13) {
+        $("#square-button").click();
+      };
+      // if (event.keyCode >=48 && event.keyCode <= 57)
+      // $("#solution").text("The key that was pressed was a number "+ event.keyCode);
+  });
+
+  function halfNumber (num) {
+    return num/2;
+  }
+
+  $("#half-button").click(function(){
+    var input = parseFloat($("#half-input").val());
+    var result = halfNumber(input);
+    $("#solution").text( input + " divided by 2 is " + result);
+  });
+
+  function percentOf(num1, num2){
+    return parseFloat((num1/num2)*100).toFixed(3);
+  }
+
+  $("#percent-button").click(function(){
+      var num1 = parseInt($("#percent1-input").val());
+      var num2 = parseInt($("#percent2-input").val());
+      $("#solution").text(num1 + " is " + percentOf(num1, num2) + "% of " + num2);
+  });
+
+  function areaOfCircle (radius) {
+    return (squareNumber(radius)*Math.PI);
+  }
+
+  $("#area-button").click(function(){
+    var input = parseInt($("#area-input").val());
+    var result = areaOfCircle(input);
+    $("#solution").text("The area of a circle with radius " + input + " is " + result);
+  });
+});
+  // input value from #square-input
+  // calculate that value squared
+  // print result to #solution div
+
+
+  </script>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  
+</body>
+</html>
+<!-- Add a script tag, and add the functions from the calculator exercise (view the solution if you haven't done it yet).
+For each operation, create an event listener for the button, and when it's clicked, find the value of the appropriate input and show the result of the calculation in the solution div.
+Bonus: respond to key presses so that the user doesn't have to click the button. -->
+
+
+<!-- Write a function called squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."
+
+
+Write a function called halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".
+
+Write a function called percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
+
+
+Write a function called areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
+
+Bonus: Round the result so there are only two digits after the decimal.
+Write a function that will take one argument (a number) and perform the following operations, using the functions you wrote earlier1:
+Take half of the number and store the result.
+Square the result of #1 and store that result.
+Calculate the area of a circle with the result of #2 as the radius.
+Calculate what percentage that area is of the squared result (#3). -->

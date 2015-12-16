@@ -1,0 +1,13 @@
+<h3> This is the boring home page</h3>
+<!-- This is the definition of the array of names -->
+<% @names = ["Jon", "Dylan", "Emily", "Michael", "Phil", "Jesus", "Alan", "Seth"]%>
+
+<!-- This is where we loop through that array -->
+<% @names.each do |n| %>
+
+<!-- Within each loop we create a block of HTML strong tags surrounding the name -->
+  <strong>
+    <%= n %>
+  </strong>
+  <br>
+<% end %>

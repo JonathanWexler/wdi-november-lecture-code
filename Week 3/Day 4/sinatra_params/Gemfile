@@ -1,0 +1,7 @@
+# Gemfile
+
+gem 'sinatra'
+
+gem 'mail'
+
+gem 'sendgrid'

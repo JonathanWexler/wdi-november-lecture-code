@@ -1,0 +1,26 @@
+<h1>Hello Home Page</h1>
+
+<%= "hello"[0] %>
+<br>
+<% if @name_param %>
+<%= @name_param %>
+<% end %>
+<br>
+<% if @username %>
+<%= @username %>
+<% end %>
+<br>
+<% if @password %>
+<%= @password %>
+<% end %>
+<br>
+
+<%= erb :section %>
+
+<form method="POST" action="/sign-in">
+  <label for="username">Username</label>
+  <input type="text" name="username">
+  <label for="password">Password</label>
+  <input type="password" name="password">
+  <input type="submit">
+</form>

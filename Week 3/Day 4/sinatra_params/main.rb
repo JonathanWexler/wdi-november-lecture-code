@@ -15,7 +15,6 @@ get '/home' do
     puts params[:name]
     @user_name = params[:name]
     # puts params[:password]
-
     erb :home
 
 end

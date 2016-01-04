@@ -1,0 +1,13 @@
+
+<h1> Here is the HOMEPAGE </h1>
+
+<% @users.each do |u|%>
+
+<%= link_to "Profile", user_path(u) %>
+<strong><%= u.fname%></strong>
+<strong><%= u.email%></strong>
+<%= link_to "x", user_path(u.id), method: :delete %>
+
+<br>
+
+<%end%>

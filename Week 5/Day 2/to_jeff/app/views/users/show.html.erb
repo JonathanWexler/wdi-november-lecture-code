@@ -1,0 +1,21 @@
+<h1>Users Profile</h1>
+
+<h2> <%= @user.first_name %></h2>
+<h2> <%= @user.last_name %></h2>
+<h2> <%= @user.email %></h2>
+
+<h1>Create a new post:</h1>
+
+<%= form_for @post, url: posts_path, html: {method: :post} do |f| %>
+  <%=f.label :new_post %>
+  <%=f.text_area :content %>  
+  <%=f.submit :create %>
+<% end %>
+
+<% @user.posts.each do |p |%>
+<h4>
+    <%= p.content %>
+</h4>
+<br>
+<% end %>
+

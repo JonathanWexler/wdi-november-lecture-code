@@ -1,0 +1,18 @@
+<h1>User Sign In</h1>
+
+<% if @user.errors.full_messages.count > 0 %>
+  <ul>
+    <% @user.errors.full_messages.each do |error_message| %>
+      <li><%= error_message%></li> <br />
+    <% end %>
+  </ul>
+  <%else%>
+  <!-- <h1>NO ERRORS</h1> -->
+<% end %>
+
+<%= form_for @user do |f|%>
+<%= f.text_field :fname %>
+<%= f.text_field :email %>
+<%= f.submit :create %>
+
+<%end%>

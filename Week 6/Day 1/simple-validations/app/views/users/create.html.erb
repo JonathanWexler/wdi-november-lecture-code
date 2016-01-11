@@ -1,0 +1,9 @@
+<% if @user.errors.full_messages.count > 0 %>
+  <ul>
+    <% @user.errors.full_messages.each do |error_message| %>
+      <li><%= error_message%></li> <br />
+    <% end %>
+  </ul>
+  <%else%>
+  <h1>NO ERRORS</h1>
+<% end %>

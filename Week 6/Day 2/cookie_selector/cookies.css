@@ -1,0 +1,58 @@
+body{
+    background-color: gray;
+}
+.center{
+    margin: 0 auto;
+    width:700px;
+}
+.cookie{
+    width: 200px;
+    height: 200px;
+    /*background-color: blue;*/
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.cookie .after {
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+    opacity: 0;
+    font-size: 25px;
+    color: blue;
+}
+.cookie:hover .after {
+    text-align: center;
+    display: block;
+    /*background: rgba(0, 0, 0, .6);*/
+    opacity: .9;
+}
+.cookie:hover {
+    opacity:0.6;
+}
+
+#cookie1{
+    background-image: url('http://vignette2.wikia.nocookie.net/halo/images/7/70/Cookie.png/revision/latest?cb=20120712170459')
+}
+#cookie2{
+    background-image: url('https://www.cocokeyboston.com/img/cookie.png')
+}
+#cookie3{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Cookie.png')
+}
+
+#cookie1:hover{
+    background-image: url('http://vignette2.wikia.nocookie.net/halo/images/7/70/Cookie.png/revision/latest?cb=20120712170459')
+}
+#cookie2:hover{
+    background-image: url('https://www.cocokeyboston.com/img/cookie.png')
+}
+#cookie3:hover{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Cookie.png')
+}
+
+.number{
+    text-align: center;
+    font-size: 30px;
+}

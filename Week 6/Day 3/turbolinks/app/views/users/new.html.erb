@@ -1,0 +1,15 @@
+<h1 class="button">Users#new</h1>
+
+
+<%= form_for @user do |f|%>
+<%= f.text_field :email %>
+<%= f.text_field :password %>
+<%= f.submit :submit, class: "button"%>
+<%end%>
+<%= link_to "home", 'users/home' %>
+
+<div id="lightbox">
+    <div id="content">
+    <%= image_tag "https://media.giphy.com/media/E0dEuSFJEgJYA/giphy.gif", id: "image"%>
+    </div>
+</div>

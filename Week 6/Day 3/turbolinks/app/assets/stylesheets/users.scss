@@ -1,0 +1,27 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.center {
+    // width: 900;
+    text-align: center;
+    background-color: blue;
+    height: 300px;
+
+}
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background-color: rgba(0,0,0,0.8); 
+    text-align:center;
+    display: none;
+}
+#image {
+    // position: absolute;
+    margin: 0 auto;
+    left: 400px;
+    background-color: black;
+}

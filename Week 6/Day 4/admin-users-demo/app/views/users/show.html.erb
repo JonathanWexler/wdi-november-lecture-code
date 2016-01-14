@@ -1,0 +1,6 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+
+<%= content_tag :h1, @user.email %>
+<%= link_to "delete", user_path(@user), method: :delete %>

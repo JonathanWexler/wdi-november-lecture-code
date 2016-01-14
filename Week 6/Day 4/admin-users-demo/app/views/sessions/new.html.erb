@@ -1,0 +1,12 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+
+<% unless @current_user %>
+<%= form_tag login_user_path do %>
+<%= text_field_tag :email, '', placeholder: "Email" %>
+<%= password_field_tag :password, '', placeholder: "Password"  %>
+<%= label_tag :admin? %>
+<%= check_box_tag :admin %>
+<%= submit_tag :create %>
+<% end %>
+<%end%>

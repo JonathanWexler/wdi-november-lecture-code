@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdminUsersDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= "You are signed in as #{@current_user.email}" if @current_user %>
+<%= "You are signed in as ADMIN: #{@current_admin.email}" if @current_admin %>
+<%= link_to "signout", logout_user_path, method: :delete if @current_admin || @current_user %>
+
+<%= flash[:alert] if flash[:alert] %>
+
+<%= yield %>
+
+</body>
+</html>

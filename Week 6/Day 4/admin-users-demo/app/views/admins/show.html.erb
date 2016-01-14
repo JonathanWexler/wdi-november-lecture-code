@@ -1,0 +1,7 @@
+<h1>Admins#show</h1>
+<p>Find me in app/views/admins/show.html.erb</p>
+
+
+
+<%= content_tag :h1, @admin.email %>
+<%= link_to "delete", admin_path(@admin), method: :delete %>

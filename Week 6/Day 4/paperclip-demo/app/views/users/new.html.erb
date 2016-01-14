@@ -1,0 +1,18 @@
+<h1>Sign up with image</h1>
+
+
+
+<%= form_for @user, :html => { :multipart => true } do |a| %>
+<%= a.text_field :email %>
+<%= a.password_field :password %>
+<%= a.file_field :avatar %>
+<%= a.submit :create %>
+<% end %>
+
+
+<br>
+
+<% @users.each do |u|%>
+<%= u.email %>
+<%= image_tag u.avatar.url(:medium) %> <br>
+<% end %>

@@ -1,0 +1,39 @@
+// main.scss
+@import 'bourbon/bourbon';
+@import 'variables';
+@import 'content';
+@import 'layout';
+@import 'use-colors';
+
+
+@for $i from 1 through 6 {
+    .text-size-#{$i} {
+        font-size: $i*6px;
+    }
+}
+
+@each $x in circle, disc, decimal, alpha, alpha-lower, hebrew {
+    .#{$x} {
+        list-style-type: #{$x};
+    }
+}
+button{
+    font-size: 20px;
+    color:white;
+}
+%unique-button{
+    color: blue;
+}
+%second-button{
+    color: red;
+}
+
+.my-button{
+    @extend %unique-button;
+}
+.your-button{
+    @extend %second-button;
+}
+
+
+

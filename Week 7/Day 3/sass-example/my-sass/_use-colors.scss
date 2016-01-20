@@ -1,0 +1,15 @@
+$unit: 5;
+
+.first-box{
+    // @include black(.2);
+    font-size: $unit*10;
+    border: solid;
+    // From the bourbon library
+    background: tint(orange, 50%);
+}
+
+.my-box{
+    // @extend .first-box;
+    font-size: $unit*5px;
+    background: shade(red, 70%);
+}

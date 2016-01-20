@@ -1,0 +1,70 @@
+p {
+  color: green; }
+
+nav li {
+  font-size: 20px; }
+nav ul {
+  background-color: blue; }
+
+.message h1 {
+  color: red; }
+
+.layout nav {
+  height: 80px; }
+
+.first-box {
+  font-size: 50;
+  border: solid;
+  background: #ffd280; }
+
+.my-box {
+  font-size: 25px;
+  background: #4d0000; }
+
+.text-size-1 {
+  font-size: 6px; }
+
+.text-size-2 {
+  font-size: 12px; }
+
+.text-size-3 {
+  font-size: 18px; }
+
+.text-size-4 {
+  font-size: 24px; }
+
+.text-size-5 {
+  font-size: 30px; }
+
+.text-size-6 {
+  font-size: 36px; }
+
+.circle {
+  list-style-type: circle; }
+
+.disc {
+  list-style-type: disc; }
+
+.decimal {
+  list-style-type: decimal; }
+
+.alpha {
+  list-style-type: alpha; }
+
+.alpha-lower {
+  list-style-type: alpha-lower; }
+
+.hebrew {
+  list-style-type: hebrew; }
+
+button {
+  font-size: 20px;
+  color: white; }
+
+.my-button {
+  color: blue; }
+
+.your-button {
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */

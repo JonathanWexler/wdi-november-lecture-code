@@ -1,0 +1,22 @@
+$color: red;
+
+nav {
+    li {
+        font-size: 20px;
+    }
+    ul{
+        background-color: blue;
+    }
+}
+
+.message {
+    h1 {
+        color:$color;
+    }
+}
+// This is for the nav layout
+.layout{
+    nav{
+        height: 80px;
+    }
+}

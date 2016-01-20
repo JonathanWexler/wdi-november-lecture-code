@@ -1,0 +1,9 @@
+$color1: blue;
+$color2: red;
+$color3: purple;
+$color4: orange;
+
+@mixin black ($opacity) {
+    background-color: rgba(0,0,0, $opacity);
+
+}

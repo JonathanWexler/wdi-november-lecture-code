@@ -1,0 +1,144 @@
+/*-------------------------------  the Flex-box fun is at the bottom!  -------------------------------*/
+/*-------------------------------  the Flex-box fun is at the bottom!  -------------------------------*/
+/*-------------------------------  the Flex-box fun is at the bottom!  -------------------------------*/
+/*-------------------------------  the Flex-box fun is at the bottom!  -------------------------------*/
+/*-------------------------------  the Flex-box fun is at the bottom!  -------------------------------*/
+
+body { 
+	background: tomato; 
+	font-family: Helvetica;
+} 
+
+h1 { 
+	text-align: center; 
+	letter-spacing: 10px; 
+	/*border-top: 3px solid black;*/
+	/*border-bottom: 3px solid black;*/
+	/*border-radius: 100px;*/
+	/*background: #FF724F*/
+		   text-shadow:
+       3px 3px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF,
+       -2px -2px 15px #FFB28F,  
+      2px -2px 15px #FFB28F,
+      -2px 2px 15px #FFB28F,
+       2px 2px 15px #FFB28F;
+}
+
+
+
+.thang1 { 
+	border: 6px dotted #E2B000; 
+	border-radius: 6px; 
+	margin-top: 10px; 
+}
+
+.thang2 { 
+	border: 6px dotted #E2B000; 
+	border-radius: 6px; 
+	margin-top: 10px; 
+}
+
+
+
+.thang1 div { 
+	background: #ccaacc; 
+	border: 1px solid #9E8DA7; 
+	font-size: 40px; 
+	border-radius: 10px;
+}
+
+.thang2 div{ 
+	background: #aaccaa; 
+	border: 1px solid #75B391; 
+	font-size: 40px; 
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------  Flex-box Time  ---------------------------------------*/
+/*---------------------------------------  Flex-box Time  ---------------------------------------*/
+/*---------------------------------------  Flex-box Time  ---------------------------------------*/
+
+
+
+.thang1 { 
+	height: 400px;
+
+	display: flex;
+
+	/*justify-content: flex-end;*/
+	/*justify-content: space-between;*/
+	/*justify-content: space-around;*/
+	/*justify-content: center;*/
+
+	/*align-items: flex-end;*/
+	/*align-items: center;*/
+	/*align-items: baseline;*/
+	/*align-items: stretch;*/
+
+	/*flex-direction: row-reverse;*/
+	/*flex-direction: column;*/
+	/*flex-direction: column-reverse;*/
+
+
+
+}
+
+.thang2 { 
+
+	/*display: flex;*/
+}
+
+
+
+
+
+
+.thang1 div { 
+	height: 50px;
+	width: 50px;
+}
+
+.thang2 div{ 
+	/*height: 50px;*/
+	/*width: 50px;*/
+}
+
+
+
+
+
+
+.thang1 .three {
+	/*background-color: white;*/
+	/*order: 1;*/
+}
+
+.thang1 .four {
+	/*background-color: grey;*/
+	/*order: -1;*/
+}
+
+
+
+

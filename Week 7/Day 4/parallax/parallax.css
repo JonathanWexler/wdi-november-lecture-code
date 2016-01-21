@@ -1,0 +1,10 @@
+.main-image{
+    height: 1800px;
+    width: 100%;
+}
+
+.second-image{
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+}
